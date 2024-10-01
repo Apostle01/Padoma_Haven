@@ -1,0 +1,52 @@
+<div class="collapse navbar-collapse" id="main-nav"></div>
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Brand</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?Sort=category&direction=desc" class="'dropdown-item">By Color</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cloths
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="cloths-link">
+                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=Blac & white kente" class="dropdown-item">Kente</a>
+                <a href="{% url 'products' %}?category=Royalty" class="dropdown-item">Kente</a>
+                <a href="{% url 'product' %}?category=Color" class="dropdown-item">Colors</a>
+                <a href="{% url 'products' %}?category=activewear,essentials,kente,royaltyshirts" class="dropdown-item">All Kente</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="afrikan-print-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                African-Print
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="african-print-link">
+                <a href="{% url 'products' %}?category=ATL" class="dropdown-item">High &amp; Ordinary</a>
+                <a href="{% url 'products' %}?category=GTP" class="dropdown-item">High &amp; Ordinary</a>
+                <a href="{% url 'products' %}?category=Woodin" class="dropdown-item">All Designs</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+    </ul>
+</div>
